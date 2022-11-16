@@ -1,0 +1,122 @@
+body {
+  background-image: url(backimag.jpg);
+  background-size: auto;
+}
+.box {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  border: 1px solid rgba(202, 161, 48, 0.685);
+}
+.center {
+  width: 60%;
+  border-radius: 12px;
+  margin: 10% 0 10% 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.37);
+  box-shadow: 0 0 20px 20px rgba(221, 175, 88, 0.445),
+    0 17px 50px 0 rgba(155, 5, 5, 0.63);
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title {
+  color: aliceblue;
+  margin: 20px;
+}
+.sj {
+  display: flex;
+  align-items: center;
+}
+.inpot input {
+  background-color: rgba(228, 228, 228, 0.144);
+  margin: 20px;
+  font-size: larger;
+  padding: 10px 0;
+  border-radius: 12px;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: rgb(233, 233, 233);
+  font-size: 20px;
+}
+.inpot input:focus {
+  outline: none;
+}
+@media (max-width: 850px) {
+  .sj {
+    flex-direction: column;
+  }
+}
+@media (max-width: 850px) {
+  .center {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .center {
+    height: 100vh;
+    box-shadow: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  .downButton .button{
+    display: block;
+  }
+  .sj button{
+    display: none;
+  }
+}
+.button {
+  margin: 20px;
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(174, 0, 255, 0.192);
+  border-radius: 12px;
+  display: inline-block;
+  font-size: large;
+  width: 130px;
+  transition: all 0.5s ease-out;
+}
+.button:hover {
+  box-shadow: 0 0 20px 10px rgba(221, 175, 88, 0.3),
+    0 0 20px 10px rgba(184, 55, 55, 0.3);
+  background-color: rgba(255, 255, 0, 0.25);
+  color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+.button:active {
+  box-shadow: 0 0 20px 15px rgba(80, 255, 80, 0.3),
+    0 0 20px 15px rgba(80, 255, 80, 0.3);
+  background-color: rgba(80, 247, 80, .49);
+  color: aliceblue;
+  outline: none;
+  transition: all 0.0s ease-out;
+}
+.list {
+  flex-direction: column;
+}
+.list ol {
+  color: aliceblue;
+  padding: 40px 40px 15px;
+}
+.downButton{
+  display: flex;
+  justify-content: center;
+}
+.downButton button {
+  display: none;
+}
