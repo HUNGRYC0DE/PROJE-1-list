@@ -103,7 +103,7 @@ hr {
 .list {
   flex-direction: column;
 }
-.list ol {
+#myUL {
   color: aliceblue;
   padding: 10px 60px 10px 40px;
   display: flex;
